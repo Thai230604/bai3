@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Ho va ten</label>
+    <input id = "ten" type="text" name="" id="">
+    <br>
+    <label for="">Mat khau</label>
+    <input id = "pass"  type="password" name="" id="">
+    <br>
+    <label for="">Khang dinh mat khau</label>
+    <input id = "pass1"  type="password" name="" id="">
+    <br>
+    <label for="">Ngay thang nam sinh</label>
+    <input id = "ngaysinh"  type="date" name="" id="">
+    <br>
+    <label for="">So dien thoai</label>
+    <input id = "sdt"  type="tel" name="" id="">
+    <br>
+    <label for="">So thich</label>
+    <select  name="" id="sothich">
+        <option value="">Dien anh</option>
+        <option value="">The thao</option>
+        <option value="">Du lich</option>
+        <option value="">Games</option>
+    </select>
+    <br>
+    <button onclick="check()">Kiem tra </button>
+
+    <script>
+        function check(){
+            var ten = document.getElementById("ten").value
+        var pass = document.getElementById("pass").value
+        var pass1 = document.getElementById("pass1").value
+        var ngay = document.getElementById("ngaysinh").value
+        var sdt = document.getElementById("sdt").value
+        var sothich = document.getElementById("sothich").value
+
+        var checkten = /\d/;
+        if(checkten.test(ten)){
+            alert("Ho ten ko dc dung so")
+            return false;
+        }
+        if(pass != pass1){
+            alert("Mat khau ko trung nhau")
+            return false;
+        }
+        var num = /^[0-9()]+$/
+        if(!num.test(sdt)){
+            alert("Sdt ko dc dung chu cai ")
+            return false;
+        }
+        if(!(/\d/.test(pass) && /[a-z]/.test(pass) && /[A-Z]/.test(pass) &&/[!@$%^&*]/.test(pass) && pass.length >= 8)){
+            alert("Mat khau ko dat yeu  cau ")
+            return false
+        }
+        alert("Dat yeu cau")
+        return true;
+        }
+    </script>
+</body>
+</html>

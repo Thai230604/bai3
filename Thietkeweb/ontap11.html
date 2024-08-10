@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">NHap cau ban dau: </label>
+    <input type="text"  id="Hoten">
+    <br>
+    <label for="">Cau sau khi sap lai: </label>
+    <input type="text" id="ten">
+    <button onclick="Xoa()">Xoa</button>
+    <button onclick="vietlai()">Viet lai</button>
+    <script>
+         function vietlai() {
+            // Lấy giá trị từ input
+            var input = document.getElementById("Hoten").value;
+
+            // Kiểm tra độ dài của câu và từng từ
+            var words = input.split(" ");
+            if (words.length > 20) {
+                alert("Câu không được quá 20 từ");
+                return;
+            }
+            for (var i = 0; i < words.length; i++) {
+                if (words[i].length > 10) {
+                    alert("Mỗi từ không được quá 10 ký tự");
+                    return;
+                }
+            }
+
+            // Sắp xếp các từ theo thứ tự alphabet
+            words.sort();
+            var ketqua = ""
+
+            for (var i = 0; i < words.length; i++) {
+                ketqua = ketqua + words[i] + " "
+            }
+
+            // Hiển thị các từ sau khi sắp xếp
+            document.getElementById("ten").value = ketqua
+        }
+
+        function Xoa() {
+            // Xóa giá trị của cả hai input
+            document.getElementById("Hoten").value = "";
+            document.getElementById("ten").value = "";
+        }
+    </script>
+</body>
+</html>

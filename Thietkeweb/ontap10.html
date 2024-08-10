@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Ho va ten: </label>
+    <input type="text"  id="Hoten">
+    <br>
+    <label for="">Ten: </label>
+    <input type="text" id="ten">
+    <button onclick="hienthi()">Hien thi</button>
+    <button onclick="huy()">Huy</button>
+    <script>
+        function hienthi(){
+            var hoten = document.getElementById("Hoten").value;
+            document.getElementById("Hoten").value = "";
+            var hoten2 = hoten.trim();
+            var mang = hoten2.split(/\s+/);
+            var ketqua = hoten2.replace(/\s+/g, " ")
+            document.getElementById("Hoten").value = ketqua;
+            document.getElementById("ten").value = mang[mang.length -1];
+        }
+        function huy(){
+            document.getElementById("Hoten").value = ""
+            document.getElementById("ten").value = ""
+        }
+    </script>
+</body>
+</html>

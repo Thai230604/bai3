@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .head-logo{
+            width: 100px;
+        }
+        .head-right{
+            background-color: #FF3399 ;
+            color: white;
+        }
+        menu ul{
+            background-color: black;
+            height: 70px;
+            display: flex;
+            color: white;
+            list-style: none;
+        }
+        menu{
+            display: flex;
+
+        }
+        menu div{
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        menu div:hover{
+            background-color: #FF3399;
+
+        }
+        menu div:hover ul{
+            display: block;
+        }
+        menu div ul{
+            display: none;
+            background-color: white;
+            color: black;
+            position: absolute;
+            top: 50px;
+            right: 0;
+        }
+        .item-img{
+            margin-right: 10px;
+            overflow: hidden;
+        }
+        .item-img img:hover{
+            scale: 1.5;
+        }
+        .item-bot:hover{
+            background-color: #FFFF66;
+            
+        }
+        .item-bot{
+            background-color: #003366 ; width: 400px; color: white; text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head-logo">
+                <img src="image.png" alt="" width="100%">
+            </div>
+            <div class="head-search">
+                <input type="text">
+                <select name="" id="">
+                    <option value="">Categories</option>
+                </select>
+            </div>
+            <div class="head-right">
+                0 Item($)-$0.00
+            </div>
+        </header>
+        <menu>
+            <div>Home</div>
+            <div>Home
+                <ul>
+                    <li>Menu</li>
+                    <li>Menu</li>
+                    <li>Menu</li>
+                    <li>Menu</li>
+                </ul>
+            </div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+            <div>Home</div>
+        </menu>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <img src="image.png" alt="" width="50px" height="50px" >
+            <input type="text">
+                <select name="" id="">
+                    <option value="">Categories</option>
+                </select>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>></button>
+                <button>>|</button>
+            </div>
+        </div>
+        <div class="content"  style="display: flex; justify-content: space-around;">
+            <div class="item">
+                <div class="item-img">
+                    <img src="1.jpg" alt="" width="400px" height="200px">
+                </div>
+                <div class="item-bot" >
+                    <p >Apple Cinema</p>
+                    <p><span style="color: #FF3399;">$110.000</span><span style="color: white;">$122.000</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="1.jpg" alt="" width="400px" height="200px">
+                </div>
+                <div class="item-bot" >
+                    <p >Apple Cinema</p>
+                    <p><span style="color: #FF3399;">$110.000</span><span style="color: white;">$122.000</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="1.jpg" alt="" width="400px" height="200px">
+                </div>
+                <div class="item-bot"  >
+                    <p >Apple Cinema</p>
+                    <p><span style="color: #FF3399;">$110.000</span><span style="color: white;">$122.000</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .head-right{
+            display: flex;
+            align-items: center;
+        }
+        .head-right p{
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        menu{
+            width: 30%;
+        }
+        .menu-one{
+            background-color: #FFCC33;
+            color: black;
+        }
+        menu div ul li{
+            background-color: white;
+            color: black;
+            border: solid 1px #999999;
+            list-style: none;
+            position: relative;
+        }
+        menu div ul li ul{
+            display: none;
+            position: absolute;
+            left: 255.72px;
+            top: 0;
+        }
+        menu div ul li:hover ul{
+            display: block;
+        }
+        .bot{
+            display: flex;
+
+        }
+        .content{
+            width: 60%;
+        }
+        .item{
+            width: 40%;
+            display: flex;
+        }
+        .item-con{
+            text-align: center;
+        }
+        .item-con button:hover{
+            background-color: #FF33CC;
+            color: white;
+        }
+        .item-picture{
+            width: 100px;
+            height: auto;
+        }
+        .boxes{
+            display: flex;
+        }
+        .box1{
+            background-color: #33CC66;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            padding-top: 40px;
+            margin-right: 10px;
+        }
+        .box2{
+            background-color: #FF6666;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            padding-top: 40px;
+            margin-right: 10px;
+        }
+        .box3{
+            background-color: #FF66FF;
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            padding-top: 40px;
+            margin-right: 10px;
+        }
+        .timkiem{
+            background-color: #FF33CC;
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            align-items: center;
+        }
+        .timkiem div ul{
+            display: flex;
+            list-style: none;
+        }
+        .timkiem div ul li{
+            margin: 0 15px;
+        }
+        .timkiem div ul li:hover{
+            color:#FFCCFF ;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-logo">
+            <img src="image.png" alt="">
+        </div>
+        <div class="head-right">
+            <img src="image.png" alt="">
+            <p>Cart</p>
+        </div>
+    </header>
+    <nav class="timkiem">
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" name="" id="">
+            <select name="" id="">
+                <option value="">Categories</option>
+            </select>
+        </div>
+    </nav>
+    <div class="bot">
+        <menu>
+            <div class="menu-one">Categories</div>
+            <div>
+                <ul>
+                    <li>Rose</li>
+                    <li>Rose
+                        <ul>
+                            <li>Macs</li>
+                            <li>Macs</li>
+                        </ul>
+                    </li>
+                    <li>Rose</li>
+                    <li>Rose</li>
+                </ul>
+    
+            </div>
+        </menu>
+        <div class="content">
+            <div style="display: flex;">
+                <div class="item">
+                    <div class="item-picture">
+                        <img src="1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="item-con">
+                        <p>Aliquam Quater Voluotatem</p>
+                        <p><span style="color:#FF33CC ;">$110.000</span><span style="color: #999999;">$122.000</span></p>
+                        <button>+Add To Cart</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-picture">
+                        <img src="1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="item-con">
+                        <p>Aliquam Quater Voluotatem</p>
+                        <p><span style="color:#FF33CC ;">$110.000</span><span style="color: #999999;">$122.000</span></p>
+                        <button>+Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="item">
+                    <div class="item-picture">
+                        <img src="1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="item-con">
+                        <p>Aliquam Quater Voluotatem</p>
+                        <p><span style="color:#FF33CC ;">$110.000</span><span style="color: #999999;">$122.000</span></p>
+                        <button>+Add To Cart</button>
+                    </div>
+                </div>
+                >
+                <div class="item">
+                    <div class="item-picture">
+                        <img src="1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="item-con">
+                        <p>Aliquam Quater Voluotatem</p>
+                        <p><span style="color:#FF33CC ;">$110.000</span><span style="color: #999999;">$122.000</span></p>
+                        <button>+Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box1">Apple</div>
+                <div class="box2">Apple</div>
+                <div class="box3">Apple</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

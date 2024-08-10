@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:  0;
+            padding:  0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 980px;
+            margin: 0 auto;
+        }
+        header{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo{
+            width: 200px;
+        }
+        .header-logo img{
+           width: 100%;
+        }
+        .header-right{
+           width: 200px;
+        }
+        .header-right img{
+            width: 50%;
+        }
+        menu{
+            display: flex;
+            background-color: #FF3399 ;
+            height: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-left ul{
+            display: flex;
+            color: white;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .menu-left ul li{
+            margin: 0 20px;
+        }
+        .content{
+            display: flex;
+        }
+        .con-lef{
+            width: 300px;
+        }
+        .con-lef-first{
+            background-color:#FFCC33 ;
+            color: black;
+        }
+        .con-left-be{
+            background-color:white;
+            color: black;
+            border: solid  #999999 1px;
+        }
+        .con-left-be-one{
+            background-color:white;
+            color: black;
+            border: solid  #999999 1px;
+            position: relative;
+        }
+        .con-left-be-one ul{
+            display: none;
+            position: absolute;
+            left: 300px;
+            top: 0;
+            list-style: none;
+            background-color: white;
+        }
+        .con-left-be-one:hover ul{
+            display: block;
+        }
+        
+
+        .con-ri{
+            width: 680px;
+        }
+        .con-ri-item{
+            width: 300px;
+            display: flex;
+        }
+        .item-img{
+            width: 150px;
+        }
+        .item-con{
+            background-color: white;
+            color: black;
+        }
+        .item-con button:hover{
+            background-color: #FF3399;
+            color: white;
+        }
+        .Alo{
+            width: 300px;
+            height: 200px;
+            margin-left: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="header-right">
+                <img src="logo.png" alt="">
+                <span>Cart</span>
+            </div>
+        </header>
+        <menu>
+            <div class="menu-left">
+                <ul>
+                    <li>Home</li>
+                    <li>Brand</li>
+                    <li>Gilf</li>
+                    <li>More</li>
+                </ul>
+            </div>
+            <div class="menu-right">
+                <input type="text">
+                <select name="" id="" >
+                    <option value="Categories">Categories</option>
+                    <option value="alo">Alo</option>
+                </select>
+
+            </div>
+        </menu>
+        <div class="content">
+            <div class="con-lef">
+                <div class="con-lef-first">CATEGORIES</div>
+                <div class="con-left-be">Rose</div>
+                <div class="con-left-be-one">Flower Basket
+                    <ul>
+                        <li>Macs</li>
+                        <li>Window</li>
+                    </ul>
+                </div>
+                <div class="con-left-be">CATEGORIES</div>
+                <div class="con-left-be">CATEGORIES</div>
+            </div>
+            <div class="con-ri">
+                <div style="display: flex;">
+                    <div class="con-ri-item">
+                        <div class="item-img">
+                            <img src="1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item-con">
+                            <p>Allquan quaerat Volidei</p>
+                            <p><span style="color: #FF3399;">$110.000</span><span style="color: #999999;">$110.000</span></p>
+                            <button>+Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con-ri-item">
+                        <div class="item-img">
+                            <img src="1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item-con">
+                            <p>Allquan quaerat Volidei</p>
+                            <p><span style="color: #FF3399;">$110.000</span><span style="color: #999999;">$110.000</span></p>
+                            <button>+Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div class="con-ri-item">
+                        <div class="item-img">
+                            <img src="1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item-con">
+                            <p>Allquan quaerat Volidei</p>
+                            <p><span style="color: #FF3399;">$110.000</span><span style="color: #999999;">$110.000</span></p>
+                            <button>+Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="con-ri-item">
+                        <div class="item-img">
+                            <img src="1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="item-con">
+                            <p>Allquan quaerat Volidei</p>
+                            <p><span style="color: #FF3399;">$110.000</span><span style="color: #999999;">$110.000</span></p>
+                            <button>+Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div class="Alo"   style="background-color: #33CC66; color: black;">Season Stock</div>
+                    <div class="Alo" style="background-color: #FF6666; color: black;">Season Stock</div>
+                    <div class="Alo" style="background-color: #FF66FF; color: black;">Season Stock</div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Nhập chuoi</label>
+    <input type="text" id = "inputString">
+    <label for="">So tu co 4 ky tu</label>
+    <input type="text" id="result">
+    <button  onclick="tim()">Tim</button>
+    <button onclick="huy()">Huy bo</button>
+    <script>
+        function tim(){
+            var chuoi = document.getElementById("inputString").value;
+
+            var mang = chuoi.split(' ');
+            var ketqua = 0;
+            //var regex = /\bm\w{3}\b/g;
+            for(var i = 0; i < mang.length; i++){
+                  if(mang[i].length == 4 && (mang[i].indexOf("m")== 0 || mang[i].indexOf("M")== 0)){
+                    ketqua++;
+                  }
+            }
+            document.getElementById('result').value = ketqua;
+        }
+        function huy(){
+            document.getElementById('inputString').value = "";
+            document.getElementById('result').value = "";
+        }
+    </script>
+</body>
+</html>
